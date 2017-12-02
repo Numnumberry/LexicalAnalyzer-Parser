@@ -1,6 +1,6 @@
 program :: block
 
-block :: { items }
+block :: **{** items }
 
 items :: items item | item
 
