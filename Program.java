@@ -11,7 +11,6 @@ public class Program {
 			System.out.println("valid");
 
 		} catch (Exception e) {
-			System.out.println(e);
 			System.out.println("Input file name as command line argument!");
 		}
 	}
