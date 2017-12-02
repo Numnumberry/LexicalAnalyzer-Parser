@@ -1,0 +1,31 @@
+program :: block
+
+block :: { items }
+
+items :: items item | item
+
+item :: decl | stmt
+
+decl :: int ident ;
+
+stmt :: expr ; | if | while | print
+
+if :: if ( expr ) block
+
+while :: while ( expr ) block
+
+print :: print ( ident ) ;
+
+expr :: A
+
+A :: identifier = A | B
+
+B :: B == C | B != C | C
+
+C :: C < D | C > D | C <= D | C >= D | D
+
+D :: D + E | D - E | E
+
+E :: E * F | E / F | F
+
+F :: ( A ) | literal | identifier
